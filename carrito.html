@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xbox Store | Carrito de compras</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER común -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="index.html" class="logo-link">
+                    <i class="fab fa-xbox"></i>
+                    <span class="logo-text">XBOX STORE</span>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Juegos</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Consolas</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Accesorios</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Ofertas</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <a href="#" class="header__icon"><i class="fas fa-search"></i></a>
+                <a href="carrito.html" class="header__icon header__cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-badge">3</span>
+                </a>
+                <a href="#" class="header__icon"><i class="fas fa-user-circle"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="cart-page">
+        <div class="container">
+            <h1 class="cart-page__title">Tu carrito <i class="fas fa-shopping-cart"></i></h1>
+            <div class="cart-content">
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="cart-table__product">
+                                <img src="https://placehold.co/80x80/107C10/white?text=Halo" alt="Halo Infinite">
+                                <span>Halo Infinite (Xbox Series X|S)</span>
+                            </td>
+                            <td>$59.99</td>
+                            <td>1</td>
+                            <td>$59.99</td>
+                        </tr>
+                        <tr>
+                            <td class="cart-table__product">
+                                <img src="https://placehold.co/80x80/107C10/white?text=Forza" alt="Forza Horizon 5">
+                                <span>Forza Horizon 5</span>
+                            </td>
+                            <td>$59.99</td>
+                            <td>2</td>
+                            <td>$119.98</td>
+                        </tr>
+                        <tr>
+                            <td class="cart-table__product">
+                                <img src="https://placehold.co/80x80/107C10/white?text=Game+Pass" alt="Game Pass Ultimate">
+                                <span>Game Pass Ultimate (3 meses)</span>
+                            </td>
+                            <td>$44.99</td>
+                            <td>1</td>
+                            <td>$44.99</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="cart-summary">
+                    <h3>Resumen de compra</h3>
+                    <div class="cart-summary__row">
+                        <span>Subtotal:</span>
+                        <span>$224.96 USD</span>
+                    </div>
+                    <div class="cart-summary__row">
+                        <span>Envío:</span>
+                        <span>Gratis</span>
+                    </div>
+                    <div class="cart-summary__row cart-summary__total">
+                        <span>Total:</span>
+                        <span>$224.96 USD</span>
+                    </div>
+                    <a href="#" class="btn btn--primary btn--block btn--large">Proceder al pago</a>
+                    <a href="index.html" class="btn btn--secondary btn--block">Seguir comprando</a>
+                    <p class="cart-note">* Este es un carrito de demostración (sin funcionalidad JS). Los valores son estáticos.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__col">
+                <h4>Xbox Store</h4>
+                <ul><li><a href="#">Acerca de</a></li><li><a href="#">Trabaja con nosotros</a></li></ul>
+            </div>
+            <div class="footer__col">
+                <h4>Soporte</h4>
+                <ul><li><a href="#">Centro de ayuda</a></li><li><a href="#">Devoluciones</a></li></ul>
+            </div>
+            <div class="footer__col">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2025 Xbox Store - Proyecto educativo sin JavaScript, listo para aplicar CSS/SASS.</p>
+        </div>
+    </footer>
+</body>
+</html>
