@@ -492,3 +492,141 @@ img {
 .related-products {
   margin: 2rem 0;
 }
+
+/* ===== ESTILOS PARA PERFIL DE USUARIO ===== */
+.profile-header {
+  background: linear-gradient(135deg, #107C10, #0A5E0A);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  background: #2C2C2C;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #FFFFFF;
+}
+
+.profile-avatar i {
+  font-size: 4rem;
+  color: #FFFFFF;
+}
+
+.profile-name {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile-email {
+  color: #E0E0E0;
+  margin-bottom: 1rem;
+}
+
+.profile-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #E0E0E0;
+}
+
+.profile-section {
+  background: #1F1F1F;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.profile-section h2 {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #2C2C2C;
+  padding-bottom: 0.5rem;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #2C2C2C;
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.order-info h3 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.order-info p {
+  font-size: 0.8rem;
+  color: #E0E0E0;
+}
+
+.order-status {
+  background: #107C10;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.info-card {
+  background: #2C2C2C;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.info-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.info-card p {
+  font-size: 0.9rem;
+  color: #E0E0E0;
+}
+
+.btn-edit {
+  background: transparent;
+  border: 1px solid #107C10;
+  color: #FFFFFF;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-edit:hover {
+  background: #107C10;
+}
