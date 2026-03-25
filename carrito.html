@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- HEADER común -->
     <header class="header">
         <div class="header__container">
             <div class="header__logo">
@@ -20,10 +19,10 @@
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Juegos</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Consolas</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Accesorios</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Ofertas</a></li>
+                    <li class="nav__item"><a href="juegos.html" class="nav__link">Juegos</a></li>
+                    <li class="nav__item"><a href="consolas.html" class="nav__link">Consolas</a></li>
+                    <li class="nav__item"><a href="accesorios.html" class="nav__link">Accesorios</a></li>
+                    <li class="nav__item"><a href="ofertas.html" class="nav__link">Ofertas</a></li>
                 </ul>
             </nav>
             <div class="header__actions">
@@ -32,7 +31,7 @@
                     <i class="fas fa-shopping-cart"></i>
                     <span class="cart-badge">3</span>
                 </a>
-                <a href="#" class="header__icon"><i class="fas fa-user-circle"></i></a>
+                <a href="perfil.html" class="header__icon"><i class="fas fa-user-circle"></i></a>
             </div>
         </div>
     </header>
@@ -43,57 +42,19 @@
             <div class="cart-content">
                 <table class="cart-table">
                     <thead>
-                        <tr>
-                            <th>Producto</th>
-                            <th>Precio</th>
-                            <th>Cantidad</th>
-                            <th>Subtotal</th>
-                        </tr>
+                        <tr><th>Producto</th><th>Precio</th><th>Cantidad</th><th>Subtotal</th></tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td class="cart-table__product">
-                                <img src="https://placehold.co/80x80/107C10/white?text=Halo" alt="Halo Infinite">
-                                <span>Halo Infinite (Xbox Series X|S)</span>
-                            </td>
-                            <td>$59.99</td>
-                            <td>1</td>
-                            <td>$59.99</td>
-                        </tr>
-                        <tr>
-                            <td class="cart-table__product">
-                                <img src="https://placehold.co/80x80/107C10/white?text=Forza" alt="Forza Horizon 5">
-                                <span>Forza Horizon 5</span>
-                            </td>
-                            <td>$59.99</td>
-                            <td>2</td>
-                            <td>$119.98</td>
-                        </tr>
-                        <tr>
-                            <td class="cart-table__product">
-                                <img src="https://placehold.co/80x80/107C10/white?text=Game+Pass" alt="Game Pass Ultimate">
-                                <span>Game Pass Ultimate (3 meses)</span>
-                            </td>
-                            <td>$44.99</td>
-                            <td>1</td>
-                            <td>$44.99</td>
-                        </tr>
+                        <tr><td class="cart-table__product"><img src="https://placehold.co/80x80/107C10/white?text=Halo" alt="Halo"><span>Halo Infinite (Xbox Series X|S)</span></td><td>$59.99</td><td>1</td><td>$59.99</td></tr>
+                        <tr><td class="cart-table__product"><img src="https://placehold.co/80x80/107C10/white?text=Forza" alt="Forza"><span>Forza Horizon 5</span></td><td>$59.99</td><td>2</td><td>$119.98</td></tr>
+                        <tr><td class="cart-table__product"><img src="https://placehold.co/80x80/107C10/white?text=Game+Pass" alt="Game Pass"><span>Game Pass Ultimate (3 meses)</span></td><td>$44.99</td><td>1</td><td>$44.99</td></tr>
                     </tbody>
                 </table>
                 <div class="cart-summary">
                     <h3>Resumen de compra</h3>
-                    <div class="cart-summary__row">
-                        <span>Subtotal:</span>
-                        <span>$224.96 USD</span>
-                    </div>
-                    <div class="cart-summary__row">
-                        <span>Envío:</span>
-                        <span>Gratis</span>
-                    </div>
-                    <div class="cart-summary__row cart-summary__total">
-                        <span>Total:</span>
-                        <span>$224.96 USD</span>
-                    </div>
+                    <div class="cart-summary__row"><span>Subtotal:</span><span>$224.96 USD</span></div>
+                    <div class="cart-summary__row"><span>Envío:</span><span>Gratis</span></div>
+                    <div class="cart-summary__row cart-summary__total"><span>Total:</span><span>$224.96 USD</span></div>
                     <a href="#" class="btn btn--primary btn--block btn--large">Proceder al pago</a>
                     <a href="index.html" class="btn btn--secondary btn--block">Seguir comprando</a>
                     <p class="cart-note">* Este es un carrito de demostración (sin funcionalidad JS). Los valores son estáticos.</p>
@@ -114,16 +75,10 @@
             </div>
             <div class="footer__col">
                 <h4>Síguenos</h4>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
+                <div class="social-icons"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
             </div>
         </div>
-        <div class="footer__bottom">
-            <p>&copy; 2025 Xbox Store - Proyecto educativo sin JavaScript, listo para aplicar CSS/SASS.</p>
-        </div>
+        <div class="footer__bottom"><p>&copy; 2025 Xbox Store - Proyecto educativo sin JavaScript.</p></div>
     </footer>
 </body>
 </html>
