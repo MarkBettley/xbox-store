@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "xboxprime-b26fe",
+    "test": "xboxprime-b26fe"
+  },
+  "targets": {},
+  "etags": {}
+}

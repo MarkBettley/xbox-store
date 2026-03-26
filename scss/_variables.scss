@@ -1,0 +1,27 @@
+// Colores temática Xbox
+$xbox-green: #107C10;
+$xbox-green-dark: #0A5E0A;
+$xbox-green-light: #2E8B2E;
+$xbox-black: #0A0A0A;
+$xbox-dark-gray: #1F1F1F;
+$xbox-gray: #2C2C2C;
+$xbox-light-gray: #E0E0E0;
+$xbox-white: #FFFFFF;
+
+// Tipografía
+$font-primary: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+
+// Breakpoints
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-wide: 1200px;
+
+// Sombras
+$shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+$shadow-md: 0 4px 8px rgba(0,0,0,0.2);
+$shadow-lg: 0 8px 16px rgba(0,0,0,0.3);
+
+// Transiciones
+$transition-fast: 0.2s ease;
+$transition-normal: 0.3s ease;
