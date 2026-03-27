@@ -10,6 +10,12 @@
 <body>
     <header class="header">
         <div class="header__container">
+            <!-- Botón izquierdo para abrir el carrito -->
+            <div class="header__left">
+                <button id="cart-drawer-trigger" class="header__icon menu-icon" aria-label="Abrir carrito">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
             <div class="header__logo">
                 <a href="index.html" class="logo-link">
                     <i class="fab fa-xbox"></i>
@@ -29,12 +35,32 @@
                 <a href="#" class="header__icon"><i class="fas fa-search"></i></a>
                 <a href="carrito.html" class="header__icon header__cart">
                     <i class="fas fa-shopping-cart"></i>
-                    <span class="cart-badge">3</span>
+                    <span class="cart-badge">0</span>
                 </a>
                 <a href="perfil.html" class="header__icon"><i class="fas fa-user-circle"></i></a>
             </div>
         </div>
     </header>
+
+    <!-- MENÚ LATERAL (CARRITO) -->
+    <div id="cart-drawer-overlay" class="drawer-overlay"></div>
+    <div id="cart-drawer" class="cart-drawer">
+        <div class="cart-drawer__header">
+            <h3>Mi Carrito</h3>
+            <button id="close-drawer" class="close-drawer-btn">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-drawer__items">
+            <!-- Contenido dinámico -->
+        </div>
+        <div class="cart-drawer__footer">
+            <div class="cart-drawer__total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button id="clear-cart-btn" class="btn btn--secondary btn--block">Vaciar carrito</button>
+            <a href="carrito.html" class="btn btn--primary btn--block">Ver carrito completo</a>
+        </div>
+    </div>
 
     <main>
         <section class="category-header">
@@ -47,7 +73,7 @@
         <section class="featured">
             <div class="container">
                 <div class="product-grid">
-                    <div class="product-card">
+                    <div class="product-card" data-id="halo-infinite">
                         <div class="product-card__image">
                             <img src="https://placehold.co/300x400/107C10/white?text=HALO+INFINITE&font=montserrat" alt="Halo Infinite">
                         </div>
@@ -59,7 +85,7 @@
                             <button class="btn btn--primary btn--block add-to-cart">Agregar</button>
                         </div>
                     </div>
-                    <div class="product-card">
+                    <div class="product-card" data-id="forza-horizon-5">
                         <div class="product-card__image">
                             <img src="https://placehold.co/300x400/107C10/white?text=FORZA+HORIZON+5&font=montserrat" alt="Forza Horizon 5">
                         </div>
@@ -71,7 +97,7 @@
                             <button class="btn btn--primary btn--block add-to-cart">Agregar</button>
                         </div>
                     </div>
-                    <div class="product-card">
+                    <div class="product-card" data-id="starfield">
                         <div class="product-card__image">
                             <img src="https://placehold.co/300x400/107C10/white?text=STARFIELD&font=montserrat" alt="Starfield">
                         </div>
@@ -83,7 +109,7 @@
                             <button class="btn btn--primary btn--block add-to-cart">Agregar</button>
                         </div>
                     </div>
-                    <div class="product-card">
+                    <div class="product-card" data-id="gears-5">
                         <div class="product-card__image">
                             <img src="https://placehold.co/300x400/107C10/white?text=GEARS+5&font=montserrat" alt="Gears 5">
                         </div>
@@ -120,8 +146,10 @@
             </div>
         </div>
         <div class="footer__bottom">
-            <p>&copy; 2025 Xbox Store - Proyecto educativo sin JavaScript.</p>
+            <p>&copy; 2025 Xbox Store - Proyecto educativo con JavaScript.</p>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

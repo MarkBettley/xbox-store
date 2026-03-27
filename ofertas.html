@@ -10,6 +10,12 @@
 <body>
     <header class="header">
         <div class="header__container">
+            <!-- Botón izquierdo para abrir el carrito -->
+            <div class="header__left">
+                <button id="cart-drawer-trigger" class="header__icon menu-icon" aria-label="Abrir carrito">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
             <div class="header__logo">
                 <a href="index.html" class="logo-link">
                     <i class="fab fa-xbox"></i>
@@ -29,12 +35,32 @@
                 <a href="#" class="header__icon"><i class="fas fa-search"></i></a>
                 <a href="carrito.html" class="header__icon header__cart">
                     <i class="fas fa-shopping-cart"></i>
-                    <span class="cart-badge">3</span>
+                    <span class="cart-badge">0</span>
                 </a>
                 <a href="perfil.html" class="header__icon"><i class="fas fa-user-circle"></i></a>
             </div>
         </div>
     </header>
+
+    <!-- MENÚ LATERAL (CARRITO) -->
+    <div id="cart-drawer-overlay" class="drawer-overlay"></div>
+    <div id="cart-drawer" class="cart-drawer">
+        <div class="cart-drawer__header">
+            <h3>Mi Carrito</h3>
+            <button id="close-drawer" class="close-drawer-btn">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-drawer__items">
+            <!-- Los items se cargarán dinámicamente -->
+        </div>
+        <div class="cart-drawer__footer">
+            <div class="cart-drawer__total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button id="clear-cart-btn" class="btn btn--secondary btn--block">Vaciar carrito</button>
+            <a href="carrito.html" class="btn btn--primary btn--block">Ver carrito completo</a>
+        </div>
+    </div>
 
     <main>
         <section class="category-header">
@@ -47,52 +73,56 @@
         <section class="featured">
             <div class="container">
                 <div class="product-grid">
-                    <div class="product-card">
+                    <!-- Game Pass Ultimate Oferta -->
+                    <div class="product-card" data-id="game-pass-ultimate-oferta">
                         <div class="product-card__image">
-                            <img src="https://placehold.co/300x300/107C10/white?text=Game+Pass+Ultimate+Oferta" alt="Game Pass Ultimate">
+                            <img src="https://placehold.co/300x400/107C10/white?text=GAME+PASS+ULTIMATE+OFERTA&font=montserrat" alt="Game Pass Ultimate">
                         </div>
                         <div class="product-card__info">
                             <h3 class="product-card__title">Game Pass Ultimate</h3>
                             <p class="product-card__description">3 meses con 20% de descuento.</p>
                             <div class="product-card__price"><span class="old-price">$44.99</span> $35.99 USD</div>
                             <a href="producto.html" class="btn btn--secondary btn--block">Ver detalles</a>
-                            <button class="btn btn--primary btn--block add-to-cart">Agregar</button>
+                            <button class="btn btn--primary btn--block add-to-cart">Agregar al carrito</button>
                         </div>
                     </div>
-                    <div class="product-card">
+                    <!-- Xbox Series S Bundle -->
+                    <div class="product-card" data-id="xbox-series-s-bundle">
                         <div class="product-card__image">
-                            <img src="https://placehold.co/300x300/107C10/white?text=Xbox+Series+S+Bundle" alt="Xbox Series S Bundle">
+                            <img src="https://placehold.co/300x400/107C10/white?text=XBOX+SERIES+S+BUNDLE&font=montserrat" alt="Xbox Series S Bundle">
                         </div>
                         <div class="product-card__info">
                             <h3 class="product-card__title">Xbox Series S Bundle</h3>
                             <p class="product-card__description">Consola + 3 meses Game Pass Ultimate.</p>
                             <div class="product-card__price"><span class="old-price">$344.98</span> $299.99 USD</div>
                             <a href="producto.html" class="btn btn--secondary btn--block">Ver detalles</a>
-                            <button class="btn btn--primary btn--block add-to-cart">Agregar</button>
+                            <button class="btn btn--primary btn--block add-to-cart">Agregar al carrito</button>
                         </div>
                     </div>
-                    <div class="product-card">
+                    <!-- Control Elite Series 2 -->
+                    <div class="product-card" data-id="control-elite-2">
                         <div class="product-card__image">
-                            <img src="https://placehold.co/300x300/107C10/white?text=Control+Elite+Oferta" alt="Control Elite Series 2">
+                            <img src="https://placehold.co/300x400/107C10/white?text=ELITE+SERIES+2&font=montserrat" alt="Control Elite Series 2">
                         </div>
                         <div class="product-card__info">
                             <h3 class="product-card__title">Control Elite Series 2</h3>
                             <p class="product-card__description">Edición especial con 15% de descuento.</p>
                             <div class="product-card__price"><span class="old-price">$179.99</span> $152.99 USD</div>
                             <a href="producto.html" class="btn btn--secondary btn--block">Ver detalles</a>
-                            <button class="btn btn--primary btn--block add-to-cart">Agregar</button>
+                            <button class="btn btn--primary btn--block add-to-cart">Agregar al carrito</button>
                         </div>
                     </div>
-                    <div class="product-card">
+                    <!-- Forza Horizon 5 Deluxe -->
+                    <div class="product-card" data-id="forza-horizon-5-deluxe">
                         <div class="product-card__image">
-                            <img src="https://placehold.co/300x300/107C10/white?text=Forza+Horizon+5+Oferta" alt="Forza Horizon 5">
+                            <img src="https://placehold.co/300x400/107C10/white?text=FORZA+HORIZON+5+DELUXE&font=montserrat" alt="Forza Horizon 5">
                         </div>
                         <div class="product-card__info">
                             <h3 class="product-card__title">Forza Horizon 5</h3>
                             <p class="product-card__description">Edición Deluxe a precio estándar.</p>
                             <div class="product-card__price"><span class="old-price">$79.99</span> $59.99 USD</div>
                             <a href="producto.html" class="btn btn--secondary btn--block">Ver detalles</a>
-                            <button class="btn btn--primary btn--block add-to-cart">Agregar</button>
+                            <button class="btn btn--primary btn--block add-to-cart">Agregar al carrito</button>
                         </div>
                     </div>
                 </div>
@@ -120,8 +150,10 @@
             </div>
         </div>
         <div class="footer__bottom">
-            <p>&copy; 2025 Xbox Store - Proyecto educativo sin JavaScript.</p>
+            <p>&copy; 2025 Xbox Store - Proyecto educativo con JavaScript.</p>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
