@@ -10,12 +10,6 @@
 <body>
     <header class="header">
         <div class="header__container">
-            <!-- Botón izquierdo para abrir el carrito -->
-            <div class="header__left">
-                <button id="cart-drawer-trigger" class="header__icon menu-icon" aria-label="Abrir carrito">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
             <div class="header__logo">
                 <a href="index.html" class="logo-link">
                     <i class="fab fa-xbox"></i>
@@ -35,39 +29,19 @@
                 <a href="#" class="header__icon"><i class="fas fa-search"></i></a>
                 <a href="carrito.html" class="header__icon header__cart">
                     <i class="fas fa-shopping-cart"></i>
-                    <span class="cart-badge">0</span>
+                    <span class="cart-badge">3</span>
                 </a>
                 <a href="perfil.html" class="header__icon"><i class="fas fa-user-circle"></i></a>
             </div>
         </div>
     </header>
 
-    <!-- MENÚ LATERAL (CARRITO) -->
-    <div id="cart-drawer-overlay" class="drawer-overlay"></div>
-    <div id="cart-drawer" class="cart-drawer">
-        <div class="cart-drawer__header">
-            <h3>Mi Carrito</h3>
-            <button id="close-drawer" class="close-drawer-btn">&times;</button>
-        </div>
-        <div id="cart-items" class="cart-drawer__items">
-            <!-- Los items se cargarán dinámicamente -->
-        </div>
-        <div class="cart-drawer__footer">
-            <div class="cart-drawer__total">
-                <span>Total:</span>
-                <span id="cart-total">$0.00</span>
-            </div>
-            <button id="clear-cart-btn" class="btn btn--secondary btn--block">Vaciar carrito</button>
-            <a href="carrito.html" class="btn btn--primary btn--block">Ver carrito completo</a>
-        </div>
-    </div>
-
     <main class="product-detail">
         <div class="container detail-container">
             <div class="product-detail__gallery">
-                <img src="https://placehold.co/600x600/107C10/white?text=HALO+INFINITE+ART&font=montserrat" alt="Halo Infinite Portada" class="product-detail__image">
+                <img src="https://placehold.co/600x600/107C10/white?text=Halo+Infinite+Art" alt="Halo Infinite Portada" class="product-detail__image">
             </div>
-            <div class="product-detail__info" data-id="halo-infinite">
+            <div class="product-detail__info">
                 <h1 class="product-detail__title">Halo Infinite</h1>
                 <div class="product-detail__rating">
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -101,24 +75,24 @@
         <div class="container">
             <h2 class="section-title">También te puede interesar</h2>
             <div class="product-grid">
-                <div class="product-card" data-id="forza-horizon-5">
-                    <div class="product-card__image"><img src="https://placehold.co/300x400/107C10/white?text=FORZA+HORIZON+5&font=montserrat" alt="Forza"></div>
+                <div class="product-card">
+                    <div class="product-card__image"><img src="https://placehold.co/300x300/107C10/white?text=Forza+Horizon+5" alt="Forza"></div>
                     <div class="product-card__info">
                         <h3 class="product-card__title">Forza Horizon 5</h3>
                         <div class="product-card__price">$59.99 USD</div>
                         <button class="btn btn--primary btn--block add-to-cart">Agregar</button>
                     </div>
                 </div>
-                <div class="product-card" data-id="starfield">
-                    <div class="product-card__image"><img src="https://placehold.co/300x400/107C10/white?text=STARFIELD&font=montserrat" alt="Starfield"></div>
+                <div class="product-card">
+                    <div class="product-card__image"><img src="https://placehold.co/300x300/107C10/white?text=Starfield" alt="Starfield"></div>
                     <div class="product-card__info">
                         <h3 class="product-card__title">Starfield</h3>
                         <div class="product-card__price">$69.99 USD</div>
                         <button class="btn btn--primary btn--block add-to-cart">Agregar</button>
                     </div>
                 </div>
-                <div class="product-card" data-id="game-pass-ultimate">
-                    <div class="product-card__image"><img src="https://placehold.co/300x400/107C10/white?text=GAME+PASS+ULTIMATE&font=montserrat" alt="Game Pass"></div>
+                <div class="product-card">
+                    <div class="product-card__image"><img src="https://placehold.co/300x300/107C10/white?text=Game+Pass+Ultimate" alt="Game Pass"></div>
                     <div class="product-card__info">
                         <h3 class="product-card__title">Game Pass Ultimate</h3>
                         <div class="product-card__price">$44.99 USD</div>
@@ -149,10 +123,8 @@
             </div>
         </div>
         <div class="footer__bottom">
-            <p>&copy; 2025 Xbox Store - Proyecto educativo con JavaScript.</p>
+            <p>&copy; 2025 Xbox Store - Proyecto educativo sin JavaScript.</p>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
 </body>
 </html>

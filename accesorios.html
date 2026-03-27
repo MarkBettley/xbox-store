@@ -10,6 +10,12 @@
 <body>
     <header class="header">
         <div class="header__container">
+            <!-- Botón izquierdo para abrir el carrito -->
+            <div class="header__left">
+                <button id="cart-drawer-trigger" class="header__icon menu-icon" aria-label="Abrir carrito">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
             <div class="header__logo">
                 <a href="index.html" class="logo-link">
                     <i class="fab fa-xbox"></i>
@@ -29,12 +35,32 @@
                 <a href="#" class="header__icon"><i class="fas fa-search"></i></a>
                 <a href="carrito.html" class="header__icon header__cart">
                     <i class="fas fa-shopping-cart"></i>
-                    <span class="cart-badge">3</span>
+                    <span class="cart-badge">0</span>
                 </a>
                 <a href="perfil.html" class="header__icon"><i class="fas fa-user-circle"></i></a>
             </div>
         </div>
     </header>
+
+    <!-- MENÚ LATERAL (CARRITO) -->
+    <div id="cart-drawer-overlay" class="drawer-overlay"></div>
+    <div id="cart-drawer" class="cart-drawer">
+        <div class="cart-drawer__header">
+            <h3>Mi Carrito</h3>
+            <button id="close-drawer" class="close-drawer-btn">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-drawer__items">
+            <!-- Los items se cargarán dinámicamente -->
+        </div>
+        <div class="cart-drawer__footer">
+            <div class="cart-drawer__total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button id="clear-cart-btn" class="btn btn--secondary btn--block">Vaciar carrito</button>
+            <a href="carrito.html" class="btn btn--primary btn--block">Ver carrito completo</a>
+        </div>
+    </div>
 
     <main>
         <section class="category-header">
@@ -47,52 +73,56 @@
         <section class="featured">
             <div class="container">
                 <div class="product-grid">
-                    <div class="product-card">
+                    <!-- Control Inalámbrico -->
+                    <div class="product-card" data-id="control-inalambrico">
                         <div class="product-card__image">
-                            <img src="https://placehold.co/300x300/107C10/white?text=Control+Inalámbrico" alt="Control Xbox">
+                            <img src="https://placehold.co/300x400/107C10/white?text=XBOX+CONTROL&font=montserrat" alt="Control Xbox">
                         </div>
                         <div class="product-card__info">
                             <h3 class="product-card__title">Control Inalámbrico Xbox</h3>
                             <p class="product-card__description">Carbon Black, compatible con Series X|S.</p>
                             <div class="product-card__price">$49.99 USD</div>
                             <a href="producto.html" class="btn btn--secondary btn--block">Ver detalles</a>
-                            <button class="btn btn--primary btn--block add-to-cart">Agregar</button>
+                            <button class="btn btn--primary btn--block add-to-cart">Agregar al carrito</button>
                         </div>
                     </div>
-                    <div class="product-card">
+                    <!-- Headset Xbox -->
+                    <div class="product-card" data-id="headset-xbox">
                         <div class="product-card__image">
-                            <img src="https://placehold.co/300x300/107C10/white?text=Headset+Xbox" alt="Headset Xbox">
+                            <img src="https://placehold.co/300x400/107C10/white?text=HEADSET+XBOX&font=montserrat" alt="Headset Xbox">
                         </div>
                         <div class="product-card__info">
                             <h3 class="product-card__title">Headset Xbox Inalámbrico</h3>
                             <p class="product-card__description">Audio de alta fidelidad, micrófono con aislamiento.</p>
                             <div class="product-card__price">$99.99 USD</div>
                             <a href="producto.html" class="btn btn--secondary btn--block">Ver detalles</a>
-                            <button class="btn btn--primary btn--block add-to-cart">Agregar</button>
+                            <button class="btn btn--primary btn--block add-to-cart">Agregar al carrito</button>
                         </div>
                     </div>
-                    <div class="product-card">
+                    <!-- Kit de Batería Recargable -->
+                    <div class="product-card" data-id="bateria-recargable">
                         <div class="product-card__image">
-                            <img src="https://placehold.co/300x300/107C10/white?text=Batería+Recargable" alt="Batería recargable">
+                            <img src="https://placehold.co/300x400/107C10/white?text=BATERIA+RECARGABLE&font=montserrat" alt="Batería recargable">
                         </div>
                         <div class="product-card__info">
                             <h3 class="product-card__title">Kit de Batería Recargable</h3>
                             <p class="product-card__description">Duración extendida, incluye cable USB-C.</p>
                             <div class="product-card__price">$24.99 USD</div>
                             <a href="producto.html" class="btn btn--secondary btn--block">Ver detalles</a>
-                            <button class="btn btn--primary btn--block add-to-cart">Agregar</button>
+                            <button class="btn btn--primary btn--block add-to-cart">Agregar al carrito</button>
                         </div>
                     </div>
-                    <div class="product-card">
+                    <!-- Tarjeta Expansión Seagate 1TB -->
+                    <div class="product-card" data-id="tarjeta-expansion">
                         <div class="product-card__image">
-                            <img src="https://placehold.co/300x300/107C10/white?text=Tarjeta+Expansión" alt="Tarjeta expansión">
+                            <img src="https://placehold.co/300x400/107C10/white?text=SEAGATE+1TB&font=montserrat" alt="Tarjeta expansión">
                         </div>
                         <div class="product-card__info">
                             <h3 class="product-card__title">Tarjeta Expansión Seagate 1TB</h3>
                             <p class="product-card__description">Optimizada para Series X|S.</p>
                             <div class="product-card__price">$149.99 USD</div>
                             <a href="producto.html" class="btn btn--secondary btn--block">Ver detalles</a>
-                            <button class="btn btn--primary btn--block add-to-cart">Agregar</button>
+                            <button class="btn btn--primary btn--block add-to-cart">Agregar al carrito</button>
                         </div>
                     </div>
                 </div>
@@ -120,8 +150,10 @@
             </div>
         </div>
         <div class="footer__bottom">
-            <p>&copy; 2025 Xbox Store - Proyecto educativo sin JavaScript.</p>
+            <p>&copy; 2025 Xbox Store - Proyecto educativo con JavaScript.</p>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

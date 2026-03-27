@@ -1,0 +1,87 @@
+[debug] [2026-03-26T03:32:09.932Z] ----------------------------------------------------------------------
+[debug] [2026-03-26T03:32:09.937Z] Command:       /usr/local/bin/node /Users/marcobettley/.npm-global/bin/firebase deploy --only hosting --debug
+[debug] [2026-03-26T03:32:09.940Z] CLI Version:   15.11.0
+[debug] [2026-03-26T03:32:09.940Z] Platform:      darwin
+[debug] [2026-03-26T03:32:09.941Z] Node Version:  v22.15.1
+[debug] [2026-03-26T03:32:09.941Z] Time:          Wed Mar 25 2026 21:32:09 GMT-0600 (Central Standard Time)
+[debug] [2026-03-26T03:32:09.941Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-03-26T03:32:12.961Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-26T03:32:12.963Z] > authorizing via signed-in user (marcobettleyrock@gmail.com)
+[debug] [2026-03-26T03:32:12.963Z] [iam] checking project xboxprime-b26fe for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-03-26T03:32:12.965Z] Checked if tokens are valid: true, expires at: 1774499524932
+[debug] [2026-03-26T03:32:12.965Z] Checked if tokens are valid: true, expires at: 1774499524932
+[debug] [2026-03-26T03:32:12.966Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/xboxprime-b26fe:testIamPermissions [none]
+[debug] [2026-03-26T03:32:12.966Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/xboxprime-b26fe:testIamPermissions  x-goog-user-project=xboxprime-b26fe
+[debug] [2026-03-26T03:32:12.967Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/xboxprime-b26fe:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-03-26T03:32:13.528Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/xboxprime-b26fe:testIamPermissions 200
+[debug] [2026-03-26T03:32:13.529Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/xboxprime-b26fe:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-03-26T03:32:13.529Z] Checked if tokens are valid: true, expires at: 1774499524932
+[debug] [2026-03-26T03:32:13.530Z] Checked if tokens are valid: true, expires at: 1774499524932
+[debug] [2026-03-26T03:32:13.530Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/xboxprime-b26fe [none]
+[debug] [2026-03-26T03:32:13.935Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/xboxprime-b26fe 200
+[debug] [2026-03-26T03:32:13.935Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/xboxprime-b26fe {"projectId":"xboxprime-b26fe","projectNumber":"220788966985","displayName":"XBOXPRIME","name":"projects/xboxprime-b26fe","resources":{"hostingSite":"xboxprime-b26fe"},"state":"ACTIVE","etag":"1_58c0633c-bb0b-4c28-9b36-3574376cb452"}
+[info] 
+[info] === Deploying to 'xboxprime-b26fe'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-03-26T03:32:13.946Z] Checked if tokens are valid: true, expires at: 1774499524932
+[debug] [2026-03-26T03:32:13.946Z] Checked if tokens are valid: true, expires at: 1774499524932
+[debug] [2026-03-26T03:32:13.946Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/xboxprime-b26fe/versions [none]
+[debug] [2026-03-26T03:32:13.946Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/xboxprime-b26fe/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-03-26T03:32:14.988Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/xboxprime-b26fe/versions 200
+[debug] [2026-03-26T03:32:14.988Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/xboxprime-b26fe/versions {"name":"projects/220788966985/sites/xboxprime-b26fe/versions/d295df6cd376258d","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[xboxprime-b26fe]: beginning deploy... 
+[info] i  hosting[xboxprime-b26fe]: found 16 files in public 
+[debug] [2026-03-26T03:32:15.018Z] [hosting] uploading with 200 concurrency
+[debug] [2026-03-26T03:32:15.022Z] Checked if tokens are valid: true, expires at: 1774499524932
+[debug] [2026-03-26T03:32:15.022Z] Checked if tokens are valid: true, expires at: 1774499524932
+[debug] [2026-03-26T03:32:15.023Z] [hosting] hash cache [cHVibGlj] stored for 16 files
+[debug] [2026-03-26T03:32:15.027Z] [hosting][hash queue][FINAL] {"max":1,"min":0,"avg":0,"active":0,"complete":16,"success":16,"errored":0,"retried":0,"total":16,"elapsed":7}
+[debug] [2026-03-26T03:32:15.028Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/220788966985/sites/xboxprime-b26fe/versions/d295df6cd376258d:populateFiles [none]
+[debug] [2026-03-26T03:32:15.028Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/220788966985/sites/xboxprime-b26fe/versions/d295df6cd376258d:populateFiles {"files":{"/producto.html":"cd3e40ae2187158f317d9e7f2b84dd74728d076830fc0c374d85d69c45a7be40","/perfil.html":"430d70e2a10682d44bdf932c8b99acaf6e4fe5e05d5fa6357a6f3e0d23b46f96","/ofertas.html":"c2fb45b3ad3db536d290f4c3763ddd1eaa3750bd2cc71a11b362d94cb6d074bc","/juegos.html":"dd48d9b7a8ea18b7dc40aa0c403361c2ef83f8b0c490ad7921a292d96e9aa234","/index.html":"6d7f3bb588eca70490d5d64741d154cde3ce28e06e3e251b54dc1185f4ece8c7","/consolas.html":"cf9e50ad54e8783ff37db37740b3171954c48d534b0f21a5cdc837654392de38","/carrito.html":"6cb1a1b9687a3623a7fa8572b5e4a38db36319f5256ebc8863f6f7e5fa602fe5","/accesorios.html":"c06b8c82f6d6b8fee87da007484574d68878b96ba3905c97b67639967bc07a07","/404.html":"b6abfbdc894d37c260154e281499dc6415bb6ad76b32f01ef94dee93aa897ac4","/scss/style.scss":"3f145963e45fa21e1c1fb2f4657e6b748d7fe4347b385619e4d18c18a4289350","/scss/_variables.scss":"8ece9c33903e597321261003a9028e74d5cddd23bbfd9f10e817ca80674463dc","/scss/_pages.scss":"f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837","/scss/_layout.scss":"665d9b3ddb8ed060f131ceda8d7d448a8e0088b3f95c0470c9beb5140fe328f1","/scss/_components.scss":"9f66c0a0b4f4371d7821d1ebbd301cbb6b9a720b615092d1db70eb028be02e85","/scss/_base.scss":"1f24768445412ecdbc0a6bbdb9691f946ad97dd7043eefaecc4d4b8a36e93952","/css/style.css":"882047284f5cbd04f16079e4ea5c45b21d1466d7346bb43bcf46b0a7e1431586"}}
+[debug] [2026-03-26T03:32:15.572Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/220788966985/sites/xboxprime-b26fe/versions/d295df6cd376258d:populateFiles 200
+[debug] [2026-03-26T03:32:15.572Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/220788966985/sites/xboxprime-b26fe/versions/d295df6cd376258d:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/xboxprime-b26fe/versions/d295df6cd376258d/files"}
+[debug] [2026-03-26T03:32:15.573Z] [hosting][populate queue][FINAL] {"max":550,"min":550,"avg":550,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":551}
+[debug] [2026-03-26T03:32:15.577Z] [hosting] uploads queued: 0
+[debug] [2026-03-26T03:32:15.577Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1774495935577}
+[info] i  hosting: upload complete 
+[info] ✔  hosting[xboxprime-b26fe]: file upload complete 
+[debug] [2026-03-26T03:32:15.578Z] [hosting] deploy completed after 585ms
+[debug] [2026-03-26T03:32:15.578Z] [
+  {
+    "config": {
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "xboxprime-b26fe"
+    },
+    "version": "projects/220788966985/sites/xboxprime-b26fe/versions/d295df6cd376258d"
+  }
+]
+[info] i  hosting[xboxprime-b26fe]: finalizing version... 
+[debug] [2026-03-26T03:32:15.580Z] Checked if tokens are valid: true, expires at: 1774499524932
+[debug] [2026-03-26T03:32:15.580Z] Checked if tokens are valid: true, expires at: 1774499524932
+[debug] [2026-03-26T03:32:15.580Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/xboxprime-b26fe/versions/d295df6cd376258d updateMask=status%2Cconfig
+[debug] [2026-03-26T03:32:15.580Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/xboxprime-b26fe/versions/d295df6cd376258d {"status":"FINALIZED","config":{}}
+[debug] [2026-03-26T03:32:16.229Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/xboxprime-b26fe/versions/d295df6cd376258d 200
+[debug] [2026-03-26T03:32:16.229Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/xboxprime-b26fe/versions/d295df6cd376258d {"name":"projects/220788966985/sites/xboxprime-b26fe/versions/d295df6cd376258d","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-03-26T03:32:14.599290Z","createUser":{"email":"marcobettleyrock@gmail.com"},"finalizeTime":"2026-03-26T03:32:16.271041Z","finalizeUser":{"email":"marcobettleyrock@gmail.com"}}
+[debug] [2026-03-26T03:32:16.230Z] [hosting] finalized version for xboxprime-b26fe:[object Object]
+[info] ✔  hosting[xboxprime-b26fe]: version finalized 
+[info] i  hosting[xboxprime-b26fe]: releasing new version... 
+[debug] [2026-03-26T03:32:16.230Z] Checked if tokens are valid: true, expires at: 1774499524932
+[debug] [2026-03-26T03:32:16.230Z] Checked if tokens are valid: true, expires at: 1774499524932
+[debug] [2026-03-26T03:32:16.230Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/xboxprime-b26fe/channels/live/releases versionName=projects%2F220788966985%2Fsites%2Fxboxprime-b26fe%2Fversions%2Fd295df6cd376258d
+[debug] [2026-03-26T03:32:16.230Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/xboxprime-b26fe/channels/live/releases {}
+[debug] [2026-03-26T03:32:16.861Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/xboxprime-b26fe/channels/live/releases 200
+[debug] [2026-03-26T03:32:16.862Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/xboxprime-b26fe/channels/live/releases {"name":"projects/220788966985/sites/xboxprime-b26fe/channels/live/releases/1774495936230000","version":{"name":"projects/220788966985/sites/xboxprime-b26fe/versions/d295df6cd376258d","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-03-26T03:32:14.599290Z","createUser":{"email":"marcobettleyrock@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIEpvaB61JZu5hmv5YZU3dsbKcOMa7SO7qsLDgoU2H6asZCJum1"},"finalizeTime":"2026-03-26T03:32:16.271041Z","finalizeUser":{"email":"marcobettleyrock@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIEpvaB61JZu5hmv5YZU3dsbKcOMa7SO7qsLDgoU2H6asZCJum1"}},"type":"DEPLOY","releaseTime":"2026-03-26T03:32:16.230Z","releaseUser":{"email":"marcobettleyrock@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIEpvaB61JZu5hmv5YZU3dsbKcOMa7SO7qsLDgoU2H6asZCJum1"}}
+[debug] [2026-03-26T03:32:16.862Z] [hosting] release: {"name":"projects/220788966985/sites/xboxprime-b26fe/channels/live/releases/1774495936230000","version":{"name":"projects/220788966985/sites/xboxprime-b26fe/versions/d295df6cd376258d","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-03-26T03:32:14.599290Z","createUser":{"email":"marcobettleyrock@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIEpvaB61JZu5hmv5YZU3dsbKcOMa7SO7qsLDgoU2H6asZCJum1"},"finalizeTime":"2026-03-26T03:32:16.271041Z","finalizeUser":{"email":"marcobettleyrock@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIEpvaB61JZu5hmv5YZU3dsbKcOMa7SO7qsLDgoU2H6asZCJum1"}},"type":"DEPLOY","releaseTime":"2026-03-26T03:32:16.230Z","releaseUser":{"email":"marcobettleyrock@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIEpvaB61JZu5hmv5YZU3dsbKcOMa7SO7qsLDgoU2H6asZCJum1"}}
+[info] ✔  hosting[xboxprime-b26fe]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/xboxprime-b26fe/overview
+[info] Hosting URL: https://xboxprime-b26fe.web.app

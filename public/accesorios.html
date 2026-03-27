@@ -3,19 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xbox Store | Juegos</title>
+    <title>Xbox Store | Accesorios</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header">
         <div class="header__container">
-            <!-- Botón izquierdo para abrir el carrito -->
-            <div class="header__left">
-                <button id="cart-drawer-trigger" class="header__icon menu-icon" aria-label="Abrir carrito">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
             <div class="header__logo">
                 <a href="index.html" class="logo-link">
                     <i class="fab fa-xbox"></i>
@@ -25,9 +19,9 @@
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
-                    <li class="nav__item"><a href="juegos.html" class="nav__link nav__link--active">Juegos</a></li>
+                    <li class="nav__item"><a href="juegos.html" class="nav__link">Juegos</a></li>
                     <li class="nav__item"><a href="consolas.html" class="nav__link">Consolas</a></li>
-                    <li class="nav__item"><a href="accesorios.html" class="nav__link">Accesorios</a></li>
+                    <li class="nav__item"><a href="accesorios.html" class="nav__link nav__link--active">Accesorios</a></li>
                     <li class="nav__item"><a href="ofertas.html" class="nav__link">Ofertas</a></li>
                 </ul>
             </nav>
@@ -35,88 +29,68 @@
                 <a href="#" class="header__icon"><i class="fas fa-search"></i></a>
                 <a href="carrito.html" class="header__icon header__cart">
                     <i class="fas fa-shopping-cart"></i>
-                    <span class="cart-badge">0</span>
+                    <span class="cart-badge">3</span>
                 </a>
                 <a href="perfil.html" class="header__icon"><i class="fas fa-user-circle"></i></a>
             </div>
         </div>
     </header>
 
-    <!-- MENÚ LATERAL (CARRITO) -->
-    <div id="cart-drawer-overlay" class="drawer-overlay"></div>
-    <div id="cart-drawer" class="cart-drawer">
-        <div class="cart-drawer__header">
-            <h3>Mi Carrito</h3>
-            <button id="close-drawer" class="close-drawer-btn">&times;</button>
-        </div>
-        <div id="cart-items" class="cart-drawer__items">
-            <!-- Contenido dinámico -->
-        </div>
-        <div class="cart-drawer__footer">
-            <div class="cart-drawer__total">
-                <span>Total:</span>
-                <span id="cart-total">$0.00</span>
-            </div>
-            <button id="clear-cart-btn" class="btn btn--secondary btn--block">Vaciar carrito</button>
-            <a href="carrito.html" class="btn btn--primary btn--block">Ver carrito completo</a>
-        </div>
-    </div>
-
     <main>
         <section class="category-header">
             <div class="container">
-                <h1 class="category-header__title">Juegos para Xbox</h1>
-                <p class="category-header__subtitle">Descubre los títulos más populares y los próximos lanzamientos.</p>
+                <h1 class="category-header__title">Accesorios Xbox</h1>
+                <p class="category-header__subtitle">Controles, headsets, cargadores y más para mejorar tu experiencia.</p>
             </div>
         </section>
 
         <section class="featured">
             <div class="container">
                 <div class="product-grid">
-                    <div class="product-card" data-id="halo-infinite">
+                    <div class="product-card">
                         <div class="product-card__image">
-                            <img src="https://placehold.co/300x400/107C10/white?text=HALO+INFINITE&font=montserrat" alt="Halo Infinite">
+                            <img src="https://placehold.co/300x300/107C10/white?text=Control+Inalámbrico" alt="Control Xbox">
                         </div>
                         <div class="product-card__info">
-                            <h3 class="product-card__title">Halo Infinite</h3>
-                            <p class="product-card__description">La campaña del Jefe Maestro.</p>
-                            <div class="product-card__price">$59.99 USD</div>
+                            <h3 class="product-card__title">Control Inalámbrico Xbox</h3>
+                            <p class="product-card__description">Carbon Black, compatible con Series X|S.</p>
+                            <div class="product-card__price">$49.99 USD</div>
                             <a href="producto.html" class="btn btn--secondary btn--block">Ver detalles</a>
                             <button class="btn btn--primary btn--block add-to-cart">Agregar</button>
                         </div>
                     </div>
-                    <div class="product-card" data-id="forza-horizon-5">
+                    <div class="product-card">
                         <div class="product-card__image">
-                            <img src="https://placehold.co/300x400/107C10/white?text=FORZA+HORIZON+5&font=montserrat" alt="Forza Horizon 5">
+                            <img src="https://placehold.co/300x300/107C10/white?text=Headset+Xbox" alt="Headset Xbox">
                         </div>
                         <div class="product-card__info">
-                            <h3 class="product-card__title">Forza Horizon 5</h3>
-                            <p class="product-card__description">Carreras en México.</p>
-                            <div class="product-card__price">$59.99 USD</div>
+                            <h3 class="product-card__title">Headset Xbox Inalámbrico</h3>
+                            <p class="product-card__description">Audio de alta fidelidad, micrófono con aislamiento.</p>
+                            <div class="product-card__price">$99.99 USD</div>
                             <a href="producto.html" class="btn btn--secondary btn--block">Ver detalles</a>
                             <button class="btn btn--primary btn--block add-to-cart">Agregar</button>
                         </div>
                     </div>
-                    <div class="product-card" data-id="starfield">
+                    <div class="product-card">
                         <div class="product-card__image">
-                            <img src="https://placehold.co/300x400/107C10/white?text=STARFIELD&font=montserrat" alt="Starfield">
+                            <img src="https://placehold.co/300x300/107C10/white?text=Batería+Recargable" alt="Batería recargable">
                         </div>
                         <div class="product-card__info">
-                            <h3 class="product-card__title">Starfield</h3>
-                            <p class="product-card__description">Aventura espacial de Bethesda.</p>
-                            <div class="product-card__price">$69.99 USD</div>
+                            <h3 class="product-card__title">Kit de Batería Recargable</h3>
+                            <p class="product-card__description">Duración extendida, incluye cable USB-C.</p>
+                            <div class="product-card__price">$24.99 USD</div>
                             <a href="producto.html" class="btn btn--secondary btn--block">Ver detalles</a>
                             <button class="btn btn--primary btn--block add-to-cart">Agregar</button>
                         </div>
                     </div>
-                    <div class="product-card" data-id="gears-5">
+                    <div class="product-card">
                         <div class="product-card__image">
-                            <img src="https://placehold.co/300x400/107C10/white?text=GEARS+5&font=montserrat" alt="Gears 5">
+                            <img src="https://placehold.co/300x300/107C10/white?text=Tarjeta+Expansión" alt="Tarjeta expansión">
                         </div>
                         <div class="product-card__info">
-                            <h3 class="product-card__title">Gears 5</h3>
-                            <p class="product-card__description">Acción y estrategia.</p>
-                            <div class="product-card__price">$39.99 USD</div>
+                            <h3 class="product-card__title">Tarjeta Expansión Seagate 1TB</h3>
+                            <p class="product-card__description">Optimizada para Series X|S.</p>
+                            <div class="product-card__price">$149.99 USD</div>
                             <a href="producto.html" class="btn btn--secondary btn--block">Ver detalles</a>
                             <button class="btn btn--primary btn--block add-to-cart">Agregar</button>
                         </div>
@@ -146,10 +120,8 @@
             </div>
         </div>
         <div class="footer__bottom">
-            <p>&copy; 2025 Xbox Store - Proyecto educativo con JavaScript.</p>
+            <p>&copy; 2025 Xbox Store - Proyecto educativo sin JavaScript.</p>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
 </body>
 </html>

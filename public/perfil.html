@@ -10,11 +10,6 @@
 <body>
     <header class="header">
         <div class="header__container">
-            <div class="header__left">
-                <button id="cart-drawer-trigger" class="header__icon menu-icon" aria-label="Abrir carrito">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
             <div class="header__logo">
                 <a href="index.html" class="logo-link">
                     <i class="fab fa-xbox"></i>
@@ -34,29 +29,12 @@
                 <a href="#" class="header__icon"><i class="fas fa-search"></i></a>
                 <a href="carrito.html" class="header__icon header__cart">
                     <i class="fas fa-shopping-cart"></i>
-                    <span class="cart-badge">0</span>
+                    <span class="cart-badge">3</span>
                 </a>
                 <a href="perfil.html" class="header__icon"><i class="fas fa-user-circle"></i></a>
             </div>
         </div>
     </header>
-
-    <div id="cart-drawer-overlay" class="drawer-overlay"></div>
-    <div id="cart-drawer" class="cart-drawer">
-        <div class="cart-drawer__header">
-            <h3>Mi Carrito</h3>
-            <button id="close-drawer" class="close-drawer-btn">&times;</button>
-        </div>
-        <div id="cart-items" class="cart-drawer__items"></div>
-        <div class="cart-drawer__footer">
-            <div class="cart-drawer__total">
-                <span>Total:</span>
-                <span id="cart-total">$0.00</span>
-            </div>
-            <button id="clear-cart-btn" class="btn btn--secondary btn--block">Vaciar carrito</button>
-            <a href="carrito.html" class="btn btn--primary btn--block">Ver carrito completo</a>
-        </div>
-    </div>
 
     <main>
         <div class="profile-header">
@@ -142,9 +120,7 @@
             <div class="footer__col"><h4>Soporte</h4><ul><li><a href="#">Centro de ayuda</a></li><li><a href="#">Devoluciones</a></li></ul></div>
             <div class="footer__col"><h4>Síguenos</h4><div class="social-icons"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div></div>
         </div>
-        <div class="footer__bottom"><p>&copy; 2025 Xbox Store - Proyecto educativo con JavaScript.</p></div>
+        <div class="footer__bottom"><p>&copy; 2025 Xbox Store - Proyecto educativo sin JavaScript.</p></div>
     </footer>
-
-    <script src="js/main.js"></script>
 </body>
 </html>
